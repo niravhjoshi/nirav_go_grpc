@@ -26,7 +26,7 @@ func main() {
 func DoUnaryCall(c calculatorpb.CalculatorServiceClient) {
 	fmt.Println("Starting to Unary API for Sum Example")
 	req := &calculatorpb.SumReq{
-		FirstNum:  40,
+		FirstNum:  87,
 		SecondNum: 40,
 	}
 
@@ -35,5 +35,5 @@ func DoUnaryCall(c calculatorpb.CalculatorServiceClient) {
 	if err != nil {
 		log.Fatalf("Error While Getting Response from API Server %v", err)
 	}
-	log.Printf("Response from Unary API %v", resp.SumRest)
+	log.Printf("Response from Unary API %v \n", resp.SumRest)
 }
